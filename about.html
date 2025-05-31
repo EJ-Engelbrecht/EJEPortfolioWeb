@@ -33,6 +33,23 @@
       margin-right: 15px;
       font-size: 1.5rem;
     }
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px; 
+      padding: 8px 16px;
+      background-color: #1e1e1e;
+      color: white;
+      text-decoration: none;
+      border: 1px solid #444;
+      border-radius: 5px;
+      z-index: 999;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+    }
+    .back-button:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
@@ -60,7 +77,7 @@
     <img src="IMAGES/1.jpg" alt="Eduard Engelbrecht" class="shadow" />
   </div>
 <div class="about-text">
-  <h5 class="text-uppercase text-muted mb-1" style="color: #ff88c2;">About Me</h5>
+  <h5 style="color: white; font-weight: 400; text-transform: uppercase;">About Me</h5>
   <h1 class="fw-bold mb-3" style="color: #00ccff;">Eduard Jacobus Engelbrecht</h1>
   <p class="mb-2">
     I’m a dedicated and ambitious software engineering student with strong skills in <strong>Python</strong>, <strong>C#</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, <strong>NoSQL</strong>, <strong>HTML/CSS</strong>, and modern frameworks like <strong>Bootstrap</strong> and <strong>Flutter</strong>. My current focus includes <strong>machine learning</strong>, <strong>AI-enhanced systems</strong>, and backend development using <strong>Node.js</strong> and <strong>MongoDB</strong>.
@@ -78,6 +95,8 @@
 
 
 </section>
+
+<a href="index.html" class="back-button">Back</a>
 
 </body>
 </html>

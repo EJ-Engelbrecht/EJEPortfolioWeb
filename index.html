@@ -24,6 +24,7 @@
     .project-card {
       background-color: #1e1e1e;
       border: none;
+      color: white;
     }
     .badge {
       background-color: #333;
@@ -65,8 +66,14 @@
   <div>
     <h6>Hello, I'm</h6>
     <h1>Eduard Jacobus Engelbrecht</h1>
-    <h4 class="text-info">Junior Software Engineer</h4>
+    <h4 class="text-info">Student Software Engineer</h4>
     <p>I am a dedicated junior software engineer with a passion for developing innovative and scalable solutions.</p>
+    <a href="RESUME/EDUARD_JACOBUS_ENGELBRECHT_CV.pdf" target="_blank" title="View Resume" >
+    <button class="project-card">
+      Download CV. 
+    </button>
+    <i class="fas fa-file-alt"></i>
+    </a>
   </div>
 </section>
 
@@ -74,37 +81,49 @@
 <section class="container my-5" id="projects">
   <h2 class="mb-4">Projects</h2>
   <div class="row g-4">
+  
     <div class="col-md-4">
-      <div class="card project-card p-4 rounded-3 shadow-sm h-100">
-        <h5>Belgium Campus Course Selector</h5>
-        <p>Dynamic web app for course discovery of Belgium Campus ITVersity courses.</p>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">HTML</span>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">CSS</span>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">JavaScript</span>
-        <a href="projects.html#project-one" class="btn btn-outline-light btn-sm mt-2">Read More</a>
+      <div class="card project-card p-4 rounded-3 shadow-sm h-100 d-flex flex-column">
+        <div class="mb-3">
+          <h5>Belgium Campus Course Selector</h5>
+          <p>Dynamic web app for course discovery of Belgium Campus ITVersity courses.</p>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">HTML</span>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">CSS</span>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">JavaScript</span>
+        </div>
       </div>
     </div>
+
     <div class="col-md-4">
-      <div class="card project-card p-3">
-        <h5>E-Commerce</h5>
-        <p>NoSQL MongoDB database implemenation using modular design for ecommerce.</p>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">JavaScript</span>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">MongoDB</span>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">NoSQL</span>
-        <a href="projects.html#project-one" class="btn btn-outline-light btn-sm mt-2">Read More</a>
+      <div class="card project-card p-4 rounded-3 shadow-sm h-100 d-flex flex-column">
+        <div class="mb-3">
+          <h5>E-Commerce</h5>
+          <p>NoSQL MongoDB database implementation using modular design for ecommerce.</p>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">JavaScript</span>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">MongoDB</span>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">NoSQL</span>
+        </div>
       </div>
     </div>
+
     <div class="col-md-4">
-      <div class="card project-card p-3">
-        <h5>Inventory Management using Machine Learning</h5>
-        <p>Modular design of python script files that use Machine Learning Models to predict the Order Quantity of the sample data.</p>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">Python</span>
-        <span class="badge rounded-pill px-3 py-2 me-1 text-light">Machine Learning</span>
-        <a href="projects.html#project-one" class="btn btn-outline-light btn-sm mt-2">Read More</a>
+      <div class="card project-card p-4 rounded-3 shadow-sm h-100 d-flex flex-column">
+        <div class="mb-3">
+          <h5>Inventory Management using Machine Learning</h5>
+          <p>Python script system that uses ML models to predict order quantity for optimized inventory.</p>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">Python</span>
+          <span class="badge rounded-pill px-3 py-2 me-1 text-light">Machine Learning</span>
+        </div>
       </div>
     </div>
+
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="projects.html" class="btn btn-outline-light btn-sm">Read More</a>
   </div>
 </section>
+
 
 
 <section class="container my-5">
@@ -142,7 +161,6 @@
       <a href="https://github.com/EJ-Engelbrecht" target="_blank"><i class="fab fa-github" title="GitHub Account"></i></a>
       <a href="https://www.linkedin.com/in/eduard-jacobus-engelbrecht-5ab022369/" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:ejengelbrecht2004@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-       <a href="RESUME/EDUARD_JACOBUS_ENGELBRECHT_CV.pdf" target="_blank" title="View Resume"><i class="fas fa-file-alt"></i></a>
     </div>
   </div>
 </section>
