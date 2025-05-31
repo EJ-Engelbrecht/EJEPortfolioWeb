@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,33 +12,33 @@
       background-color: #121212;
       color: white;
     }
+
     .navbar {
       border-bottom: 1px solid #2a2a2a;
     }
-    .hero-section img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+
     .project-card {
       background-color: #1e1e1e;
       border: none;
       border-radius: 10px;
     }
+
     .badge {
       background-color: #333;
       margin-bottom: 7px;
     }
+
     .social-icons a {
       color: white;
       margin-right: 15px;
       font-size: 1.5rem;
     }
+
     .project-card a {
       color: #00bfff;
       text-decoration: none;
     }
+
     .back-button {
       position: fixed;
       bottom: 20px;
@@ -52,15 +53,83 @@
       font-size: 0.9rem;
       transition: background-color 0.2s ease;
     }
+
     .back-button:hover {
       background-color: #333;
     }
 
+    .project-image-title {
+      position: relative;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .project-image-title .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .project-image-title span {
+      position: relative;
+      z-index: 1;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0.25rem 0.5rem;
+      text-align: center;
+    }
+
+    .bg-project-1 {
+      background-image: url('IMAGES/courseselector.png');
+    }
+
+    .bg-project-2 {
+      background-image: url('IMAGES/communityportal.png');
+    }
+
+    .bg-project-3 {
+      background-image: url('IMAGES/consent.png');
+    }
+
+    .bg-project-4 {
+      background-image: url('IMAGES/ecommerce.png');
+    }
+
+    .bg-project-5 {
+      background-image: url('IMAGES/eventmanagement.png');
+    }
+
+    .bg-project-6 {
+      background-image: url('IMAGES/inventorymanagementML.png');
+    }
+
+    .bg-project-7 {
+      background-image: url('IMAGES/studentsupportML.png');
+    }
+
+    .bg-project-8 {
+      background-image: url('IMAGES/studentmanagementsystem.png');
+    }
+
+    .bg-project-9 {
+      background-image: url('IMAGES/informationsystemstoolkit.png');
+    }
+
+    .bg-project-10 {
+      background-image: url('IMAGES/internetoverviewpage.png');
+    }
   </style>
 </head>
-<body>
 
+<body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -83,111 +152,158 @@
     <h1 class="text-center mb-5 fw-bold" style="font-size: 2.5rem;">Projects</h1>
     <div class="row">
 
+      <!-- 1 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Belgium Campus Course Selector</div>
+            <div class="project-image-title bg-project-1 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Belgium Campus Course Selector</span>
+            </div>
             <h5 class="card-title">Belgium Campus Course Explorer</h5>
-            <p class="card-text">Dynamic web app for course discovery. Features course info, calendars, study guide downloads, and login system with backend integration.</p>
+            <p class="card-text">Dynamic web app for course discovery. Features course info, calendars, study guide
+              downloads, and login system with backend integration.</p>
             <a href="https://github.com/EJ-Engelbrecht/WPR281_Assignment" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 2 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Community Portal</div>
+            <div class="project-image-title bg-project-2 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Community Portal</span>
+            </div>
             <h5 class="card-title">TogetherWorks Community Portal</h5>
-            <p class="card-text">Full-stack EJS + Express app for listing events, contact messaging, and team showcase. Dynamic routing and monthly event filter support.</p>
+            <p class="card-text">Full-stack EJS + Express app for listing events, contact messaging, and team showcase.
+              Dynamic routing and monthly event filter support.</p>
             <a href="https://github.com/EJ-Engelbrecht/WPR381---Community-Portal" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 3 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Consent App</div>
+            <div class="project-image-title bg-project-3 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Consent App</span>
+            </div>
             <h5 class="card-title">Consent App & Backend</h5>
-            <p class="card-text">Flutter-based app with PDF generation, signature input, scheduled form tracking, and a Node.js API backend for secure consent processing.</p>
+            <p class="card-text">Flutter-based app with PDF generation, signature input, scheduled form tracking, and a
+              Node.js API backend for secure consent processing.</p>
             <a href="https://github.com/EJ-Engelbrecht/consent_app_and_backend" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 4 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">E-Commerce</div>
+            <div class="project-image-title bg-project-4 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>E-Commerce</span>
+            </div>
             <h5 class="card-title">E-Commerce Platform</h5>
-            <p class="card-text">An Express + MongoDB e-commerce store with admin dashboard, cart logic, checkout system, and dynamic product database integration.</p>
+            <p class="card-text">A MongoDB e-commerce store that allows for CRUD implementation. Adjusted for perfect
+              scalability and modularity.</p>
             <a href="https://github.com/EJ-Engelbrecht/DBD381-Ecommerce" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 5 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">C# Event Management Console Application</div>
+            <div class="project-image-title bg-project-5 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>C# Event Management Console Application</span>
+            </div>
             <h5 class="card-title">C# Console App</h5>
-            <p class="card-text">This is a console app that works on an Azure database to store user information and plan events via a C# console application.</p>
+            <p class="card-text">Console app connected to Azure DB to manage events and users via C# backend logic.</p>
             <a href="https://github.com/EJ-Engelbrecht/PRG-281-Project" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 6 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Machine Learning Inventory Management</div>
+            <div class="project-image-title bg-project-6 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Machine Learning Inventory</span>
+            </div>
             <h5 class="card-title">MLG CYO Demand Forecasting</h5>
-            <p class="card-text">Machine learning model to predict product demand and optimize reorder levels using outlier removal, scaling, and supervised regression.</p>
+            <p class="card-text">Machine learning model to forecast inventory demand and optimize restocking strategies
+              using regression and data preprocessing.</p>
             <a href="https://github.com/EJ-Engelbrecht/MLG382_CYO_PROJ_GroupX" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 7 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Machine Learning Student Support</div>
-            <h5 class="card-title">ML Guided Visualizer</h5>
-            <p class="card-text">Interactive learning platform showing classification, clustering, and regression results in real time using Python and scikit-learn.</p>
+            <div class="project-image-title bg-project-7 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>ML Guided Visualizer</span>
+            </div>
+            <h5 class="card-title">Machine Learning Student Support</h5>
+            <p class="card-text">An interactive Python app visualizing ML models in real-time for education using
+              scikit-learn.</p>
             <a href="https://github.com/EJ-Engelbrecht/MLG382_Guided_Project_GroupX" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 8 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">C# Records</div>
+            <div class="project-image-title bg-project-8 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>C# Student Management</span>
+            </div>
             <h5 class="card-title">C# Student Management System</h5>
-            <p class="card-text">A Windows Forms desktop app written in C# for adding, editing, and deleting student academic records and GPA calculations.</p>
+            <p class="card-text">Windows Forms app to handle student record CRUD operations and GPA logic.</p>
             <a href="https://github.com/EJ-Engelbrecht/PRG282-Project" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 9 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Information Systems Toolkit</div>
+            <div class="project-image-title bg-project-9 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Information Systems Toolkit</span>
+            </div>
             <h5 class="card-title">IT Systems Toolkit</h5>
-            <p class="card-text">Contains information regarding various Information Systems and they are applied in regards to certain topics.</p>
+            <p class="card-text">An educational resource for understanding applied Information Systems in various
+              domains.</p>
             <a href="https://github.com/EJ-Engelbrecht/INF-Project" target="_blank">Read More</a>
           </div>
         </div>
       </div>
 
+      <!-- 10 -->
       <div class="col-md-4 mb-4">
         <div class="card project-card text-white h-100">
           <div class="card-body">
-            <div class="text-center mb-3 bg-secondary py-5 rounded">Internet Overview Information Page</div>
+            <div class="project-image-title bg-project-10 mb-3 rounded">
+              <div class="overlay"></div>
+              <span>Internet Overview Page</span>
+            </div>
             <h5 class="card-title">Internet Overview Webpage</h5>
-            <p class="card-text">First webpage project built upon using HTML and CSS. Main purpose is to provide insights into the internet and it's exisitence.</p>
+            <p class="card-text">Introductory HTML/CSS project exploring the internet's history and structure.</p>
             <a href="https://github.com/EJ-Engelbrecht/WPR-Project" target="_blank">Read More</a>
           </div>
         </div>
@@ -198,6 +314,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <a href="index.html" class="back-button">Back</a>
-
 </body>
+
 </html>
